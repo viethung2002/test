@@ -6,12 +6,12 @@ import torch
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Model paths
-YOLO_WEIGHTS = Path("best.pt")
+YOLO_WEIGHTS = Path("weight/best.pt")
 REID_WEIGHTS = Path("osnet_x0_25_msmt17.pt")
 
 # Video input/output
-VIDEO_INPUT = "test1.mp4"
-VIDEO_OUTPUT = "output_slikworm_17.mp4"
+VIDEO_INPUT = "input_video/test1.mp4"
+VIDEO_OUTPUT = "output_video/output_slikworm.mp4"
 
 # Tracker config
 USE_KALMAN = False
